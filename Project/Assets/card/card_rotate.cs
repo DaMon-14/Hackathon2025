@@ -1,9 +1,11 @@
 using System.Collections;
+using System.Threading.Tasks;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class card_rotate : MonoBehaviour
 {
-    public float rotationSpeed = 50f;
+    public float rotationSpeed = 1f;
     private Vector3 rotationAxis = new Vector3(0, 1, 0);
     bool rotated = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -15,27 +17,51 @@ public class card_rotate : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float angle = transform.eulerAngles.y;
-        if(angle <= 180 && rotated ==false)
+        // Detect left mouse click (new Input System)
+        if (Mouse.current.leftButton.wasPressedThisFrame)
+        {
+            // Raycast to detect clicked object
+            Vector2 mousePos = Mouse.current.position.ReadValue();
+            Vector3 worldPos = Camera.main.ScreenToWorldPoint(mousePos);
+            Vector2 worldPos2D = new Vector2(worldPos.x, worldPos.y);
+
+            RaycastHit2D hit = Physics2D.Raycast(worldPos2D, Vector2.zero);
+
+            if (hit.collider != null && hit.collider.gameObject == gameObject)
+            {
+                Debug.Log("Clicked" + gameObject.name);
+                Rotate();
+                // Call your flip or rotation logic here
+            }
+        }
+
+    }
+
+    async void Rotate()
+    {
+        float angle = ReadCardAngle();
+        while (angle < 180 && angle >= 0)
         {
             transform.Rotate(rotationAxis, rotationSpeed * Time.deltaTime);
+            await Task.Delay(10);
+            angle = ReadCardAngle();
         }
-        if(angle >= 180)
-        {
-            rotated = true;
-        }
-        StartCoroutine(Wait());
-        if(angle >= 0 && rotated ==true)
+        await Task.Delay(3000);
+        while (angle <= 180 && angle > 0)
         {
             transform.Rotate(rotationAxis, -rotationSpeed * Time.deltaTime);
-        }
-        if (angle <= 0)
-        {
-            rotated = false;
+            await Task.Delay(10);
+            angle = ReadCardAngle();
         }
     }
-    IEnumerator Wait()
+    
+    float ReadCardAngle()
     {
-        yield return new WaitForSeconds(3f);
+        float x;
+        x= transform.eulerAngles.y;
+        x= (x > 180) ? x - 360 : x; // Convert angle to range [-180, 180]
+        x = x < -90 ? 180 : x < 0 ? 0 : x;
+        transform.eulerAngles = new Vector3(0f, x, 0f);
+        return x;
     }
 }
