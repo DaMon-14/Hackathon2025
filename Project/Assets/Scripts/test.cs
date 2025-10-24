@@ -9,9 +9,9 @@ public class test : MonoBehaviour
     void Update()
     {
         // Detect Space key press (once per press)
-        if (Keyboard.current.spaceKey.wasPressedThisFrame)
+        if ( Keyboard.current.sKey.isPressed)
         {
-            transform.position = new Vector3(
+             transform.position = new Vector3(
                 transform.position.x,
                 transform.position.y + moveDistance,
                 transform.position.z
