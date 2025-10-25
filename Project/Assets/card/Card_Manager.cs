@@ -16,10 +16,13 @@ public class Card_Manager : MonoBehaviour
     public int waitTime = 3000;
     private int[] cardTypesIndex = new int[5]; // 0-blue 1-green 2-yellow 3-brown 4-black
     public TMPro.TMP_Text scoreText;
+    public TMPro.TMP_Text remainingAttemptsText;
+    public int attempts = 15;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         scoreText.text = "Score: 0";
+        remainingAttemptsText.text = "Attempts Left: "+ attempts.ToString();
         Sprite[] blueSprites = Resources.LoadAll<Sprite>("Card/0");
         Sprite[] greenSprites = Resources.LoadAll<Sprite>("Card/1");
         Sprite[] yellowSprites = Resources.LoadAll<Sprite>("Card/2");
@@ -76,12 +79,6 @@ public class Card_Manager : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public async Task CardClicked(GameObject obj)
     {
         Debug.Log("Clicked" + obj.name);
@@ -108,6 +105,7 @@ public class Card_Manager : MonoBehaviour
                 await Task.Delay(waitTime);
                 selectedCards[0].GetComponent<card>().RotateToBack();
                 await selectedCards[1].GetComponent<card>().RotateToBack();
+                remainingAttemptsText.text = "Attempts Left: " + (--attempts).ToString();
             }
             selectedCards = new GameObject[2] { null, null };
         }
