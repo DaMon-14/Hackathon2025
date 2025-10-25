@@ -57,4 +57,9 @@ public class Drag_script : MonoBehaviour
         }
         oldWorldPos2D = worldPos2D;
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Debug.Log($"{gameObject.name} collided with {collision.gameObject.name}");
+    }
 }
