@@ -151,8 +151,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a984284cca24b142bfdc02c4c43160b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Drag_script
-  impulseDirection: {x: 0, y: 1}
-  impulseStrength: 5
+  impulseStrength: 1
 --- !u!212 &848207591
 SpriteRenderer:
   m_ObjectHideFlags: 0

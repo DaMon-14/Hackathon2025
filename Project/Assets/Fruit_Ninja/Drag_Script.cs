@@ -8,8 +8,14 @@ public class Drag_script : MonoBehaviour
     private bool isDragged = false;
     private bool forceApplied = false;
     private Rigidbody2D rb;
-    public Vector2 impulseDirection = Vector2.up;
     public float impulseStrength = 5f;
+
+    Vector2 mousePos;
+    RaycastHit2D hit;
+    Vector3 worldPos;
+    Vector2 worldPos2D;
+
+    Vector2 oldWorldPos2D = Vector2.zero;
     void Start()
     {
         cam = Camera.main;
@@ -19,33 +25,36 @@ public class Drag_script : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector2 mousePos = Mouse.current.position.ReadValue();
-            Vector3 worldPos = Camera.main.ScreenToWorldPoint(mousePos);
-            Vector2 worldPos2D = new Vector2(worldPos.x, worldPos.y);
-
-            RaycastHit2D hit = Physics2D.Raycast(worldPos2D, Vector2.zero);
+        mousePos = Mouse.current.position.ReadValue();
+        worldPos = Camera.main.ScreenToWorldPoint(mousePos);
+        worldPos2D = new Vector2(worldPos.x, worldPos.y);
         if (Mouse.current.leftButton.isPressed)
         {
-            isDragged = true;
-            forceApplied = false;
-            // Raycast to detect clicked object
-            
-
-            if ((hit.collider != null && hit.collider.gameObject == gameObject) || isDragged == true)
+            hit = Physics2D.Raycast(worldPos2D, Vector2.zero);
+            if((hit.collider != null && hit.collider.gameObject == gameObject))
             {
-               transform.position = new Vector3(worldPos.x, worldPos.y, -0.1f);
+                isDragged = true;
+            }
+            if (isDragged)
+            {
+                forceApplied = false;
+                transform.position = new Vector3(worldPos.x, worldPos.y, -0.1f);
             }
         }
         else
         {
-            isDragged = false;
-            if (!forceApplied)
+            if (!forceApplied && isDragged)
             {
+                Vector2 impulseDirection = (worldPos2D - oldWorldPos2D)/Time.deltaTime;
+
                 rb.linearVelocity = Vector2.zero; // Reset velocity before applying impulse
-                rb.AddForce(impulseDirection.normalized * impulseStrength, ForceMode2D.Impulse);
+                rb.linearVelocity = impulseDirection * impulseStrength;
+                //rb.AddForce(impulseDirection * impulseStrength, ForceMode2D.Impulse);
                 forceApplied = true;
             }
+            isDragged = false;
             
         }
+        oldWorldPos2D = worldPos2D;
     }
 }
