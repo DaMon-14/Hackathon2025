@@ -32,7 +32,6 @@ public class card : MonoBehaviour
             if (hit.collider != null && hit.collider.gameObject == gameObject)
             { 
                 GameObject.Find("Card_Manager").GetComponent<Card_Manager>().CardClicked(gameObject);
-                // Call your flip or rotation logic here
             }
         }
 
