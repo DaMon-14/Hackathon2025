@@ -1,13 +1,13 @@
 using System.Collections;
 using System.Threading.Tasks;
+using UnityEditor.Tilemaps;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class card_rotate : MonoBehaviour
+public class card : MonoBehaviour
 {
-    public float rotationSpeed = 1f;
+    public float rotationSpeed = 400f;
     private Vector3 rotationAxis = new Vector3(0, 1, 0);
-    bool rotated = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -28,16 +28,14 @@ public class card_rotate : MonoBehaviour
             RaycastHit2D hit = Physics2D.Raycast(worldPos2D, Vector2.zero);
 
             if (hit.collider != null && hit.collider.gameObject == gameObject)
-            {
-                Debug.Log("Clicked" + gameObject.name);
-                Rotate();
+            { 
+                GameObject.Find("Card_Manager").GetComponent<Card_Manager>().CardClicked(gameObject);
                 // Call your flip or rotation logic here
             }
         }
 
     }
-
-    async void Rotate()
+    public async Task RotateToFront()
     {
         float angle = ReadCardAngle();
         while (angle < 180 && angle >= 0)
@@ -46,9 +44,13 @@ public class card_rotate : MonoBehaviour
             await Task.Delay(10);
             angle = ReadCardAngle();
         }
-        await Task.Delay(3000);
+    }
+
+    public async Task RotateToBack()
+    {
+        float angle = ReadCardAngle();
         while (angle <= 180 && angle > 0)
-        {
+        {  
             transform.Rotate(rotationAxis, -rotationSpeed * Time.deltaTime);
             await Task.Delay(10);
             angle = ReadCardAngle();
