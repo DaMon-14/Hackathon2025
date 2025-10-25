@@ -7,7 +7,9 @@ using UnityEngine.InputSystem;
 public class card : MonoBehaviour
 {
     public float rotationSpeed = 400f;
+    public float moveSpeed = 5f;
     private Vector3 rotationAxis = new Vector3(0, 1, 0);
+    public int type = 0; // Card type identifier
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -65,5 +67,15 @@ public class card : MonoBehaviour
         x = x < -90 ? 180 : x < 0 ? 0 : x;
         transform.eulerAngles = new Vector3(0f, x, 0f);
         return x;
+    }
+
+    public async Task MoveToPosition(Vector3 targetPosition)
+    {
+        while (Vector3.Distance(transform.position, targetPosition) > 0.01f)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
+            await Task.Delay(10);
+        }
+        transform.position = targetPosition; // Ensure exact position at the end
     }
 }
