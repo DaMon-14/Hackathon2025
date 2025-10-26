@@ -1,5 +1,7 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.XR.Haptics;
 
 public class Drag_script : MonoBehaviour
 {
@@ -16,6 +18,9 @@ public class Drag_script : MonoBehaviour
     Vector2 worldPos2D;
 
     Vector2 oldWorldPos2D = Vector2.zero;
+
+    private Vector2 impulse;
+    public float maxImpulse = 20f;
     void Start()
     {
         cam = Camera.main;
@@ -46,9 +51,11 @@ public class Drag_script : MonoBehaviour
             if (!forceApplied && isDragged)
             {
                 Vector2 impulseDirection = (worldPos2D - oldWorldPos2D)/Time.deltaTime;
-
+                impulse = impulseDirection * impulseStrength;
+                if (impulse.x > maxImpulse || impulse.x<-maxImpulse) impulse = new Vector2(sign(impulse.x)* maxImpulse, impulse.y);
+                if (impulse.y > maxImpulse || impulse.y<-maxImpulse) impulse = new Vector2(impulse.x, sign(impulse.y)* maxImpulse);
                 rb.linearVelocity = Vector2.zero; // Reset velocity before applying impulse
-                rb.linearVelocity = impulseDirection * impulseStrength;
+                rb.linearVelocity = impulse;
                 //rb.AddForce(impulseDirection * impulseStrength, ForceMode2D.Impulse);
                 forceApplied = true;
             }
@@ -58,8 +65,17 @@ public class Drag_script : MonoBehaviour
         oldWorldPos2D = worldPos2D;
     }
 
+    private int sign(float value)
+    {
+        return value < 0 ? -1 : 1;
+    }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         Debug.Log($"{gameObject.name} collided with {collision.gameObject.name}");
+        if(collision.gameObject.name == "Fail_Area")
+        {
+            Destroy(gameObject);
+        }
     }
 }
