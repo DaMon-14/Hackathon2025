@@ -4,9 +4,12 @@
 TagManager:
   serializedVersion: 3
   tags:
-  - CornerTL
-  - CornerTR
-  - CornerBL
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  - Fail_Area
   layers:
   - Default
   - TransparentFX

@@ -2,6 +2,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.XR.Haptics;
+using UnityEngine.SocialPlatforms.Impl;
 
 public class Drag_script : MonoBehaviour
 {
@@ -21,6 +22,8 @@ public class Drag_script : MonoBehaviour
 
     private Vector2 impulse;
     public float maxImpulse = 20f;
+
+    public int type; // 0-blue 1-green 2-yellow 3-brown 4-black
     void Start()
     {
         cam = Camera.main;
@@ -73,7 +76,18 @@ public class Drag_script : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         Debug.Log($"{gameObject.name} collided with {collision.gameObject.name}");
-        if(collision.gameObject.name == "Fail_Area")
+        if(type.ToString() == collision.gameObject.tag)
+        {
+            GameObject.Find("Item_Manager").GetComponent<Item_Manager>().score += 1;
+        }else if(collision.gameObject.tag == gameObject.tag)  
+        {
+            // Do nothing
+        }
+        else
+        {
+            GameObject.Find("Item_Manager").GetComponent<Item_Manager>().mistakes_left -= 1;
+        }
+        if (!(collision.gameObject.tag == gameObject.tag) || collision.gameObject.tag == "Fail_Area")
         {
             Destroy(gameObject);
         }
