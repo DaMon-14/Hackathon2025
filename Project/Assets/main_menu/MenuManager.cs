@@ -26,7 +26,7 @@ public class MenuManager : MonoBehaviour
     }
     public void Playgame3()
     {
-        SceneManager.LoadScene("CharacterCustomisation");
+        SceneManager.LoadScene("Fruit_Ninja_Sort");
     }
 
 
