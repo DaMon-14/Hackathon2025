@@ -745,7 +745,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1170945068}
         m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
-        m_MethodName: Playgame1
+        m_MethodName: TestDaMon
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
