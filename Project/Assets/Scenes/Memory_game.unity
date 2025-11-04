@@ -760,8 +760,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1415519457}
-  - component: {fileID: 1415519456}
   - component: {fileID: 1415519458}
+  - component: {fileID: 1415519459}
   m_Layer: 0
   m_Name: Card_Model
   m_TagString: Untagged
@@ -769,21 +769,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1415519456
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1415519455}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b91c95ec14ee7a945bf69b27b1834265, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::card_rotate
-  rotationSpeed: 800
-  moveSpeed: 60
-  type: 0
 --- !u!4 &1415519457
 Transform:
   m_ObjectHideFlags: 0
@@ -847,6 +832,23 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1.5}
   m_EdgeRadius: 0
+--- !u!114 &1415519459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1415519455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e4386c58d9ed194aacf30f783a6a193, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Card
+  rotationSpeed: 400
+  moveSpeed: 5
+  flipToBack: 0
+  moveToDelete: 0
+  type: -1
 --- !u!1 &1557246978
 GameObject:
   m_ObjectHideFlags: 0
@@ -946,7 +948,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1667926542}
-  - component: {fileID: 1667926541}
+  - component: {fileID: 1667926543}
   m_Layer: 0
   m_Name: Card_Manager
   m_TagString: Untagged
@@ -954,23 +956,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1667926541
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1667926540}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2065f6928d04884e9c65f534eec0863, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Card_Manager
-  score: 0
-  waitTime: 2000
-  scoreText: {fileID: 1797540429}
-  remainingAttemptsText: {fileID: 1958788845}
-  attempts: 15
 --- !u!4 &1667926542
 Transform:
   m_ObjectHideFlags: 0
@@ -986,6 +971,26 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1667926543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1667926540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08661ae0a29516f46b3b7e6dd8402145, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Card_Manager
+  score: 0
+  scoreText: {fileID: 1797540429}
+  remainingAttemptsText: {fileID: 1958788845}
+  attempts: 15
+  startTime: 0
+  currentTime: 0
+  waitTime: 2
+  selectedCardsIsFull: 0
 --- !u!1 &1797540427
 GameObject:
   m_ObjectHideFlags: 0

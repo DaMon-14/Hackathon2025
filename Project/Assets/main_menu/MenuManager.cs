@@ -32,28 +32,6 @@ public class MenuManager : MonoBehaviour
         SceneManager.LoadScene("Fruit_Ninja_Sort");
     }
 
-    public void TestDaMon()
-    {
-       StartCoroutine(Gettest());
-    }
-
-    private IEnumerator Gettest()
-    {
-        string url = "https://localhost:7172/Admin/allClient_Course";
-        UnityWebRequest request = UnityWebRequest.Get(url);
-        request.SetRequestHeader("UID", "a13fab95-ce9c-4325-896f-5cbc4691aa28");
-        yield return request.SendWebRequest();
-
-        if (request.result == UnityWebRequest.Result.Success)
-        {
-            Debug.Log("Response: " + request.downloadHandler.text);
-        }
-        else
-        {
-            Debug.Log("Error: " + request.error);
-        }
-    }
-
     public void QuitGame()
     {
         Debug.Log("game quitted!!");
