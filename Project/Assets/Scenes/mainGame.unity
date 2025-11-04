@@ -1162,14 +1162,14 @@ VideoPlayer:
   m_TargetMaterialRenderer: {fileID: 0}
   m_TargetMaterialProperty: <noninit>
   m_RenderMode: 1
-  m_AspectRatio: 2
-  m_DataSource: 0
+  m_AspectRatio: 5
+  m_DataSource: 1
   m_TimeUpdateMode: 2
   m_PlaybackSpeed: 1
   m_AudioOutputMode: 2
   m_TargetAudioSources: []
   m_DirectAudioVolumes: []
-  m_Url: 
+  m_Url: https://71031630-646c-4838-aaff-090ece9cbbc2.client-api.unity3dusercontent.com/client_api/v1/environments/1ded2b0d-88a2-4682-ad2d-7b5fde2d9e4b/buckets/9c49a1d5-6e9e-4a36-88c7-cd40e42448c1/entries/120657b2-25a3-476b-97d6-54fa10f7d7f2/versions/1f09bee2-9ae9-4fa2-8f0b-0365745d8cc0/content/
   m_EnabledAudioTracks: 
   m_DirectAudioMutes: 
   m_ControlledAudioTrackCount: 0
