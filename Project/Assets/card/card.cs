@@ -67,7 +67,7 @@ public class Card : MonoBehaviour
 
     bool MoveToPosition()
     {
-        Vector3 targetPosition = new Vector3(0f, 6f, 0f); // Example target position
+        Vector3 targetPosition = new Vector3(0f, 6f, -0.5f); // Example target position
         float step = moveSpeed * Time.deltaTime;
         transform.position = Vector3.MoveTowards(transform.position, targetPosition, step);
         return Vector3.Distance(transform.position, targetPosition) < 0.001f;
