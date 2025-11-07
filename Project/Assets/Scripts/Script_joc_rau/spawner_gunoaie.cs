@@ -1,4 +1,11 @@
+using System.Collections;
+using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using TMPro;
+using UnityEngine.UI;
+using System;
+
 
 public class spawner_gunoaie : MonoBehaviour
 {
@@ -7,6 +14,8 @@ public class spawner_gunoaie : MonoBehaviour
     public float rate = 2;
     private float contor = 0;
     public float offset_h = 10;
+    public GameObject sac=new GameObject();
+   
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -35,22 +44,24 @@ public class spawner_gunoaie : MonoBehaviour
             Sprite[] brownSprites = Resources.LoadAll<Sprite>("Card/3");
             Sprite[] blackSprites = Resources.LoadAll<Sprite>("Card/4");
 
-            spriteIndex = Random.Range(0, 5);
+            spriteIndex = UnityEngine.Random.Range(0, 5);
             SpriteRenderer gunoirenderer = gunoi.GetComponent<SpriteRenderer>();
 
             if (spriteIndex == 0)
-                gunoirenderer.sprite = blueSprites[Random.Range(0, blueSprites.Length)];
+                gunoirenderer.sprite = blueSprites[UnityEngine.Random.Range(0, blueSprites.Length)];
             else if (spriteIndex == 1)
-                gunoirenderer.sprite = greenSprites[Random.Range(0, greenSprites.Length)];
+                gunoirenderer.sprite = greenSprites[UnityEngine.Random.Range(0, greenSprites.Length)];
             else if (spriteIndex == 2)
-                gunoirenderer.sprite = yellowSprites[Random.Range(0, yellowSprites.Length)];
+                gunoirenderer.sprite = yellowSprites[UnityEngine.Random.Range(0, yellowSprites.Length)];
             else if (spriteIndex == 3)
-                gunoirenderer.sprite = brownSprites[Random.Range(0, brownSprites.Length)];
+                gunoirenderer.sprite = brownSprites[UnityEngine.Random.Range(0, brownSprites.Length)];
             else if (spriteIndex == 4)
-                gunoirenderer.sprite = blackSprites[Random.Range(0, blackSprites.Length)];
+                gunoirenderer.sprite = blackSprites[UnityEngine.Random.Range(0, blackSprites.Length)];
 
-            Instantiate(gunoi, new Vector3(Random.Range(pct_min, pct_max), transform.position.y, 0), transform.rotation);
+            Instantiate(gunoi, new Vector3(UnityEngine.Random.Range(pct_min, pct_max), transform.position.y, 0), transform.rotation);
             contor = 0;
         }
     }
+
+   
 }
