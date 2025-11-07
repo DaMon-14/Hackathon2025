@@ -1,10 +1,11 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
-using TMPro;
+using UnityEngine.SocialPlatforms.Impl;
 using UnityEngine.UI;
-using System;
 
 
 public class spawner_gunoaie : MonoBehaviour
@@ -15,7 +16,8 @@ public class spawner_gunoaie : MonoBehaviour
     private float contor = 0;
     public float offset_h = 10;
     public GameObject sac=new GameObject();
-   
+    int viu = 1;
+    int score = 0;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -63,5 +65,17 @@ public class spawner_gunoaie : MonoBehaviour
         }
     }
 
-   
+    public void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (gunoi.transform.position.y == sac.transform.position.y && gunoi.transform.position.x == sac.transform.position.x)
+        {
+            viu = 0;
+            Destroy(gameObject);
+            score++;
+
+
+        }
+    }
+
+
 }
