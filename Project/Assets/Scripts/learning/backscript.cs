@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class backscript : MonoBehaviour
 {
-    public GameObject text = new GameObject();
+    public GameObject text;
    public void backtomenu()
     {
         SceneManager.LoadScene("CharacterCustomisation");
@@ -12,6 +12,7 @@ public class backscript : MonoBehaviour
 
     public void Start()
     {
-        text.SetActive(false);
+        text = new GameObject();
+        //text.SetActive(false);
     }
 }
