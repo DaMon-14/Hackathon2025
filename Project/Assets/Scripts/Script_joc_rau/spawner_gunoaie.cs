@@ -99,6 +99,6 @@ public class spawner_gunoaie : MonoBehaviour
 
     public void main_scene()
     {
-        SceneManager.LoadScene("CharacterCustomisation");
+        SceneTransition.Instance.FadeToScene("CharacterCustomisation");
     }
 }
