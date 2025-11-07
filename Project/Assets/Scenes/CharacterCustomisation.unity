@@ -696,7 +696,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -451, y: 76}
+  m_AnchoredPosition: {x: -600, y: -189}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1046678400
@@ -745,7 +745,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1170945068}
         m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
-        m_MethodName: TestDaMon
+        m_MethodName: Playgame1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -896,7 +896,7 @@ RectTransform:
   m_GameObject: {fileID: 1145072676}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.2375, y: 7.103839, z: 2.2375}
+  m_LocalScale: {x: 3.2, y: 9.5, z: 2.2375}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1083142146}
@@ -905,7 +905,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -449, y: -244}
+  m_AnchoredPosition: {x: 67, y: 46}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1145072678
@@ -924,7 +924,7 @@ MonoBehaviour:
   backgroundImage: {fileID: 1083142147}
   videoPlayer: {fileID: 1428848503}
   sceneToLoad: Memory_Game
-  fadeDuration: 0.4
+  fadeDuration: 1
 --- !u!114 &1145072679
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1165,7 +1165,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 540, y: 162}
+  m_AnchoredPosition: {x: 756, y: -131}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1277017100
@@ -1428,7 +1428,7 @@ RectTransform:
   m_GameObject: {fileID: 1340782325}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.4249, y: 6.946406, z: 1}
+  m_LocalScale: {x: 3.5, y: 9, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 270989414}
@@ -1437,7 +1437,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 536, y: 315}
+  m_AnchoredPosition: {x: 714, y: 58}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1340782327
@@ -1456,7 +1456,7 @@ MonoBehaviour:
   backgroundImage: {fileID: 270989415}
   videoPlayer: {fileID: 1888994888}
   sceneToLoad: Fruit_Ninja_Sort
-  fadeDuration: 0.4
+  fadeDuration: 1
 --- !u!114 &1340782328
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1913,7 +1913,7 @@ RectTransform:
   m_GameObject: {fileID: 1545606631}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.2, y: 1.2, z: 1.1503}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1567587620}
@@ -1922,7 +1922,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -451, y: 233}
+  m_AnchoredPosition: {x: -592.85, y: 47.699}
   m_SizeDelta: {x: 391.9071, y: 245}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1545606633
@@ -1992,8 +1992,8 @@ MonoBehaviour:
   videoPreview: {fileID: 1889582122}
   backgroundImage: {fileID: 1567587621}
   videoPlayer: {fileID: 1889582124}
-  sceneToLoad: SampleScene
-  fadeDuration: 0.5
+  sceneToLoad: Game_rau
+  fadeDuration: 1
 --- !u!1 &1567587619
 GameObject:
   m_ObjectHideFlags: 0
@@ -2105,7 +2105,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -451, y: -423}
+  m_AnchoredPosition: {x: 55, y: -176}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1622865653

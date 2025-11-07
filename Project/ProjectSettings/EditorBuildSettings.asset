@@ -20,6 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Fruit_Ninja_Sort.unity
     guid: e3affbb39a9352a48ab888fd40d3a3be
+  - enabled: 1
+    path: Assets/Scenes/Game_rau.unity
+    guid: 69db688ce90716b44a7f627d8e72bb93
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

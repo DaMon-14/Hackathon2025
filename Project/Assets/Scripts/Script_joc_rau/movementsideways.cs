@@ -1,3 +1,4 @@
+using System.Net.Sockets;
 using UnityEditor.ShaderGraph;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -13,26 +14,34 @@ public class test : MonoBehaviour
     {
         
         // Detect Space key press (once per press)
-        if ( Keyboard.current.spaceKey.isPressed)
+        if ( Keyboard.current.dKey.isPressed)
         {
              transform.position = new Vector3(
-                transform.position.x,
-                transform.position.y + moveDistance,
+                transform.position.x + moveDistance,
+                transform.position.y ,
+                transform.position.z
+            );
+        }
+        if (Keyboard.current.aKey.isPressed)
+        {
+            square.transform.position = new Vector3(
+                transform.position.x - moveDistance,
+                transform.position.y,
                 transform.position.z
             );
         }
 
-        if (square.transform.position.y <= -3)
+        if (square.transform.position.x < -6)
         {
-            square.transform.position = new Vector3(transform.position.x,-3,transform.position.z);
+            square.transform.position = new Vector3(-6,transform.position.y,transform.position.z);
         }
         else
         {
             square.transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z);
         }
-        if (square.transform.position.y>5)
+        if (square.transform.position.x>6)
         {
-            square.transform.position = new Vector3(transform.position.x, 5, transform.position.z);
+            square.transform.position = new Vector3(6, transform.position.y, transform.position.z);
         }
         else
         {
