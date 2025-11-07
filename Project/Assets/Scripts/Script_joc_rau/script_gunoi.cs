@@ -5,8 +5,8 @@ using UnityEngine.UI;
 public class script_gunoi : MonoBehaviour
 {
     public GameObject spawn;
-    public float viteza = 5;
-    public float deadzone = -8;
+    public float viteza = 2f;
+    public float deadzone = -4.5f;
     public int type;
     public int score_int = 0;
     // Update is called once per frame
@@ -21,8 +21,11 @@ public class script_gunoi : MonoBehaviour
         
         if (transform.position.y < deadzone)
         {
+            spawn.GetComponent<spawner_gunoaie>().scadere();
             Destroy(gameObject);
         }
+
+       
 
     }
 
@@ -36,7 +39,9 @@ public class script_gunoi : MonoBehaviour
         else
         {
             Destroy(gameObject);
-        }    
+            spawn.GetComponent<spawner_gunoaie>().scadere();
+            
+        }   
 
           
     }

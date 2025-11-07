@@ -1,5 +1,4 @@
 using System.Net.Sockets;
-using UnityEditor.ShaderGraph;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Playables;
@@ -10,10 +9,11 @@ public class script_sac : MonoBehaviour
     public float moveDistance = 0.1f;
     public float movementZone = 6f;
     SpriteRenderer sacrenderer;
-    public int type;
+    public int type=4;
     void Start()
     {
         sacrenderer = gameObject.GetComponent<SpriteRenderer>();
+        type = 4;
     }
 
     void Update()

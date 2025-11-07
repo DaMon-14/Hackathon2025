@@ -1,17 +1,18 @@
-using JetBrains.Annotations;
+﻿using JetBrains.Annotations;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.SocialPlatforms.Impl;
 using UnityEngine.UI;
 
 
 public class spawner_gunoaie : MonoBehaviour
 {
-    
+    public Button exit;
     public GameObject sac;
     public GameObject gunoi;
     int spriteIndex;
@@ -20,10 +21,10 @@ public class spawner_gunoaie : MonoBehaviour
     public float offset_h;
     private float pct_min;
     private float pct_max;
-    
-
+    public TMPro.TMP_Text vieti;
     public TMPro.TMP_Text score;
     public int score_int = 0;
+    public int nr_vieti = 3;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -73,6 +74,25 @@ public class spawner_gunoaie : MonoBehaviour
     public void adaugare()
     {
         score_int = score_int + 1;
-        score.text = "Score=" + score_int.ToString();
+        score.text = "Score:" + score_int.ToString();
+        if(score_int>10)
+        {
+            gunoi.GetComponent<script_gunoi>().viteza = gunoi.GetComponent<script_gunoi>().viteza + 0.3f;
+        }
+    }
+
+    public void scadere()
+    {
+        nr_vieti = nr_vieti - 1;
+        vieti.text = "Încercări rămase:" + nr_vieti.ToString();
+        if(nr_vieti<=0)
+        {
+            main_scene();
+        }
+    }
+
+    public void main_scene()
+    {
+        SceneManager.LoadScene("CharacterCustomisation");
     }
 }
