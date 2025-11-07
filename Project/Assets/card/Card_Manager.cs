@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Card_Manager : MonoBehaviour
@@ -6,6 +7,7 @@ public class Card_Manager : MonoBehaviour
     public static int rows = 4;
     public static int cols = 5;
     GameObject[,] cards = new GameObject[cols, rows];
+    GameObject[,] nullCardsArray = new GameObject[cols, rows]; 
     private GameObject cardModel;
     private GameObject[] selectedCards;
 
@@ -22,6 +24,7 @@ public class Card_Manager : MonoBehaviour
     private bool rotateBack = false;
 
     public bool selectedCardsIsFull = false;
+    public bool allCardsCleared = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -37,6 +40,7 @@ public class Card_Manager : MonoBehaviour
         selectedCards = new GameObject[2] { null, null };
         cardTypesIndex = new int[5] { 0, 0, 0, 0, 0 };
         cardModel = GameObject.Find("Card_Model");
+        nullCardsArray = new GameObject[cols, rows];
         for (int i = 0; i < cols; i++)
         {
             for (int j = 0; j < rows; j++)
@@ -117,11 +121,25 @@ public class Card_Manager : MonoBehaviour
                         remainingAttemptsText.text = "Attempts Left: " + attempts.ToString();
                     }
                     selectedCards = new GameObject[2] { null, null };
-                    
+
                 }
                 rotateBack = false;
             }
         }
+        
+        if (AllNull(cards) == true)
+        {
+            Debug.Log("All cards cleared!");
+            allCardsCleared = true;
+        }
     }
-
+    private bool AllNull(GameObject[,] objects)
+    {
+        foreach (var obj in objects)
+        {
+            if (obj != null)
+                return false;
+        }
+        return true;
+    }
 }
