@@ -26,9 +26,14 @@ public class Item_Manager : MonoBehaviour
     public float Spawn_Interval_Original = 2f;
     public float Last_Spawn_Time = 0f;
     public float Difficulty_Increase_Rate = 0.1f;
+
+    private string textScore;
+    private string textMistakesLeftText;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        textScore = scoreText.text;
+        textMistakesLeftText = mistakesLeftText.text;
         blueSprites = Resources.LoadAll<Sprite>("Fruit_Ninja/0");
         greenSprites = Resources.LoadAll<Sprite>("Fruit_Ninja/1");
         yellowSprites = Resources.LoadAll<Sprite>("Fruit_Ninja/2");
@@ -47,8 +52,8 @@ public class Item_Manager : MonoBehaviour
         if (Spawn_Interval > 0.5f)
             Spawn_Interval = Spawn_Interval_Original - Difficulty_Increase_Rate * score;
 
-        scoreText.text = "Score: " + score.ToString();
-        mistakesLeftText.text = "Mistakes Left: " + mistakes_left.ToString();
+        scoreText.text = textScore + score.ToString();
+        mistakesLeftText.text = textMistakesLeftText + mistakes_left.ToString();
     }
 
     void Spawn_Item()

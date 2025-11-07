@@ -236,4 +236,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SceneTransition
   fadeCanvasGroup: {fileID: 9111766122330205826}
-  fadeDuration: 1
+  fadeDuration: 0.5

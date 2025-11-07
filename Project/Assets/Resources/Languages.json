@@ -11,10 +11,173 @@
       {"key":"game3Btn", "value":"Game 3"},
       {"key":"learnBtn", "value":"Learn more"},
       {"key":"hint1Btn", "value":"The purpose of the game is to collect trash from the river. Arrow left/right for movement and A, S, D, F, G for category selection (A - black, S - blue, D - brown, F - green, G - yellow)."},
-      {"key":"hint2Btn", "value":"It's like a clasic memory game, but instead of the cards having the same picture, they sould be of the same type (exaple: banana with apple is good)"},
-      {"key":"hint3Btn", "value":"Similar to Fruit Ninja, but insead of cutting the trash, you need to sort it by category (example: glass bottle goes to the green area)"},
+      {"key":"hint2Btn", "value":"It's like a classic memory game, but instead of the cards having the same picture, they should be of the same type (example: banana with apple is good)."},
+      {"key":"hint3Btn", "value":"Similar to Fruit Ninja, but instead of cutting the trash, you need to sort it by category (example: glass bottle goes to the green area)."},
       {"key":"hintDefault", "value":""},
-      {"key":"learnText", "value":"Selective waste collection is essential for protecting the environment. By properly separating plastic, paper, glass, and household waste, we help reduce pollution and save natural resources. Every small action matters — recycling helps decrease the amount of waste sent to landfills and transforms old materials into new products. It is everyone’s responsibility to keep the planet clean for future generations."}
+      {"key":"learnText", "value":"Selective waste collection is essential for protecting the environment. By properly separating plastic, paper, glass, and household waste, we help reduce pollution and save natural resources. Every small action matters — recycling helps decrease the amount of waste sent to landfills and transforms old materials into new products. It is everyone’s responsibility to keep the planet clean for future generations."},
+      {"key":"score", "value":"Score:"},
+      {"key":"attempsLeft", "value":"Attempts Left:"},
+      {"key":"mistakesLeft", "value":"Mistakes Left:"}
+    ]
+  },
+  {
+    "code": "Es",
+    "entries": [
+      {"key":"playBtn", "value":"Jugar"},
+      {"key":"exitBtn", "value":"Salir"},
+      {"key":"backBtn", "value":"Atrás"},
+      {"key":"game1Btn", "value":"Juego 1"},
+      {"key":"game2Btn", "value":"Juego 2"},
+      {"key":"game3Btn", "value":"Juego 3"},
+      {"key":"learnBtn", "value":"Aprender más"},
+      {"key":"hint1Btn", "value":"El objetivo del juego es recoger la basura del río. Usa las flechas izquierda/derecha para moverte y A, S, D, F, G para seleccionar la categoría (A - negro, S - azul, D - marrón, F - verde, G - amarillo)."},
+      {"key":"hint2Btn", "value":"Es como un clásico juego de memoria, pero en lugar de tener las mismas imágenes, las cartas deben ser del mismo tipo (ejemplo: plátano con manzana está bien)."},
+      {"key":"hint3Btn", "value":"Similar a Fruit Ninja, pero en lugar de cortar la basura, debes clasificarla por categoría (ejemplo: la botella de vidrio va al área verde)."},
+      {"key":"hintDefault", "value":""},
+      {"key":"learnText", "value":"La recolección selectiva de residuos es esencial para proteger el medio ambiente. Separar correctamente el plástico, el papel, el vidrio y los desechos domésticos ayuda a reducir la contaminación y a conservar los recursos naturales. Cada pequeña acción cuenta: el reciclaje reduce los residuos enviados a los vertederos y convierte los materiales usados en nuevos productos. Es responsabilidad de todos mantener el planeta limpio para las generaciones futuras."},
+      {"key":"score", "value":"Puntuación:"},
+      {"key":"attempsLeft", "value":"Intentos restantes:"},
+      {"key":"mistakesLeft", "value":"Errores restantes:"}
+    ]
+  },
+  {
+    "code": "De",
+    "entries": [
+      {"key":"playBtn", "value":"Spielen"},
+      {"key":"exitBtn", "value":"Beenden"},
+      {"key":"backBtn", "value":"Zurück"},
+      {"key":"game1Btn", "value":"Spiel 1"},
+      {"key":"game2Btn", "value":"Spiel 2"},
+      {"key":"game3Btn", "value":"Spiel 3"},
+      {"key":"learnBtn", "value":"Mehr erfahren"},
+      {"key":"hint1Btn", "value":"Ziel des Spiels ist es, Müll aus dem Fluss zu sammeln. Pfeile links/rechts für Bewegung und A, S, D, F, G zur Auswahl der Kategorie (A - schwarz, S - blau, D - braun, F - grün, G - gelb)."},
+      {"key":"hint2Btn", "value":"Es ist wie ein klassisches Memory-Spiel, aber anstelle identischer Bilder sollten die Karten vom selben Typ sein (Beispiel: Banane mit Apfel ist richtig)."},
+      {"key":"hint3Btn", "value":"Ähnlich wie Fruit Ninja, aber anstatt Müll zu schneiden, musst du ihn nach Kategorie sortieren (Beispiel: Glasflasche gehört in den grünen Bereich)."},
+      {"key":"hintDefault", "value":""},
+      {"key":"learnText", "value":"Die getrennte Müllsammlung ist entscheidend für den Umweltschutz. Durch die richtige Trennung von Plastik, Papier, Glas und Hausmüll helfen wir, die Verschmutzung zu reduzieren und natürliche Ressourcen zu schonen. Jede kleine Handlung zählt — Recycling verringert die Menge des Mülls auf Deponien und verwandelt alte Materialien in neue Produkte. Es ist die Verantwortung jedes Einzelnen, den Planeten für zukünftige Generationen sauber zu halten."},
+      {"key":"score", "value":"Punkte:"},
+      {"key":"attempsLeft", "value":"Versuche übrig:"},
+      {"key":"mistakesLeft", "value":"Fehler übrig:"}
+    ]
+  },
+  {
+    "code": "Hu",
+    "entries": [
+      {"key":"playBtn", "value":"Játék"},
+      {"key":"exitBtn", "value":"Kilépés"},
+      {"key":"backBtn", "value":"Vissza"},
+      {"key":"game1Btn", "value":"1. játék"},
+      {"key":"game2Btn", "value":"2. játék"},
+      {"key":"game3Btn", "value":"3. játék"},
+      {"key":"learnBtn", "value":"Tudj meg többet"},
+      {"key":"hint1Btn", "value":"A játék célja a folyóból a szemét összegyűjtése. A bal/jobb nyíl a mozgáshoz, és az A, S, D, F, G billentyűk a kategória kiválasztásához (A - fekete, S - kék, D - barna, F - zöld, G - sárga)."},
+      {"key":"hint2Btn", "value":"Ez olyan, mint egy klasszikus memóriajáték, de a kártyáknak nem azonos képeik vannak, hanem azonos típusúaknak kell lenniük (példa: banán és alma jó párosítás)."},
+      {"key":"hint3Btn", "value":"Hasonló a Fruit Ninja-hoz, de a szemét vágása helyett kategóriák szerint kell szétválogatnod (példa: az üvegpalack a zöld területre kerül)."},
+      {"key":"hintDefault", "value":""},
+      {"key":"learnText", "value":"A szelektív hulladékgyűjtés elengedhetetlen a környezet védelméhez. A műanyag, papír, üveg és háztartási hulladék megfelelő szétválasztásával csökkentjük a szennyezést és megóvjuk a természeti erőforrásokat. Minden apró tett számít — az újrahasznosítás csökkenti a hulladék mennyiségét és új termékekké alakítja a régi anyagokat. Mindannyiunk felelőssége, hogy tisztán tartsuk a bolygót a jövő generációi számára."},
+      {"key":"score", "value":"Pontszám:"},
+      {"key":"attempsLeft", "value":"Hátralévő próbák:"},
+      {"key":"mistakesLeft", "value":"Hátralévő hibák:"}
+    ]
+  },
+  {
+    "code": "It",
+    "entries": [
+      {"key":"playBtn", "value":"Gioca"},
+      {"key":"exitBtn", "value":"Esci"},
+      {"key":"backBtn", "value":"Indietro"},
+      {"key":"game1Btn", "value":"Gioco 1"},
+      {"key":"game2Btn", "value":"Gioco 2"},
+      {"key":"game3Btn", "value":"Gioco 3"},
+      {"key":"learnBtn", "value":"Scopri di più"},
+      {"key":"hint1Btn", "value":"Lo scopo del gioco è raccogliere i rifiuti dal fiume. Frecce sinistra/destra per muoverti e A, S, D, F, G per selezionare la categoria (A - nero, S - blu, D - marrone, F - verde, G - giallo)."},
+      {"key":"hint2Btn", "value":"È come un classico gioco di memoria, ma invece di avere le stesse immagini, le carte devono essere dello stesso tipo (esempio: banana e mela vanno bene insieme)."},
+      {"key":"hint3Btn", "value":"Simile a Fruit Ninja, ma invece di tagliare i rifiuti, devi ordinarli per categoria (esempio: la bottiglia di vetro va nella zona verde)."},
+      {"key":"hintDefault", "value":""},
+      {"key":"learnText", "value":"La raccolta differenziata è essenziale per proteggere l’ambiente. Separando correttamente plastica, carta, vetro e rifiuti domestici, aiutiamo a ridurre l’inquinamento e a preservare le risorse naturali. Ogni piccola azione conta — il riciclaggio riduce la quantità di rifiuti nelle discariche e trasforma i materiali vecchi in nuovi prodotti. È responsabilità di tutti mantenere il pianeta pulito per le generazioni future."},
+      {"key":"score", "value":"Punteggio:"},
+      {"key":"attempsLeft", "value":"Tentativi rimasti:"},
+      {"key":"mistakesLeft", "value":"Errori rimasti:"}
+    ]
+  },
+  {
+    "code": "De-AT",
+    "entries": [
+      {"key":"playBtn", "value":"Spielen"},
+      {"key":"exitBtn", "value":"Beenden"},
+      {"key":"backBtn", "value":"Zurück"},
+      {"key":"game1Btn", "value":"Spiel 1"},
+      {"key":"game2Btn", "value":"Spiel 2"},
+      {"key":"game3Btn", "value":"Spiel 3"},
+      {"key":"learnBtn", "value":"Mehr erfahren"},
+      {"key":"hint1Btn", "value":"Ziel des Spiels ist es, Müll aus dem Fluss zu sammeln. Pfeile links/rechts zum Bewegen und A, S, D, F, G zur Auswahl der Kategorie (A - schwarz, S - blau, D - braun, F - grün, G - gelb)."},
+      {"key":"hint2Btn", "value":"Ein klassisches Gedächtnisspiel, aber statt gleicher Bilder sollen die Karten vom selben Typ sein (z. B.: Banane und Apfel passen zusammen)."},
+      {"key":"hint3Btn", "value":"Ähnlich wie Fruit Ninja, aber du sortierst den Müll nach Kategorie (z. B.: Glasflasche gehört in den grünen Bereich)."},
+      {"key":"hintDefault", "value":""},
+      {"key":"learnText", "value":"Die Mülltrennung ist ein wichtiger Beitrag zum Umweltschutz. Durch richtiges Trennen von Plastik, Papier, Glas und Restmüll tragen wir zur Reduktion der Verschmutzung bei und schonen natürliche Ressourcen. Jede Handlung zählt — Recycling reduziert die Abfallmenge auf Deponien und schafft neue Produkte aus alten Materialien."},
+      {"key":"score", "value":"Punkte:"},
+      {"key":"attempsLeft", "value":"Versuche übrig:"},
+      {"key":"mistakesLeft", "value":"Fehler übrig:"}
+    ]
+  },
+  {
+    "code": "Cs",
+    "entries": [
+      {"key":"playBtn", "value":"Hrát"},
+      {"key":"exitBtn", "value":"Ukončit"},
+      {"key":"backBtn", "value":"Zpět"},
+      {"key":"game1Btn", "value":"Hra 1"},
+      {"key":"game2Btn", "value":"Hra 2"},
+      {"key":"game3Btn", "value":"Hra 3"},
+      {"key":"learnBtn", "value":"Více informací"},
+      {"key":"hint1Btn", "value":"Cílem hry je sbírat odpadky z řeky. Šipky vlevo/vpravo pro pohyb a klávesy A, S, D, F, G pro výběr kategorie (A - černá, S - modrá, D - hnědá, F - zelená, G - žlutá)."},
+      {"key":"hint2Btn", "value":"Je to jako klasická paměťová hra, ale místo stejných obrázků musí být karty stejného typu (například: banán a jablko)."},
+      {"key":"hint3Btn", "value":"Podobné jako Fruit Ninja, ale místo řezání odpadu ho musíš třídit podle kategorií (například: skleněná láhev patří do zelené zóny)."},
+      {"key":"hintDefault", "value":""},
+      {"key":"learnText", "value":"Třídění odpadu je nezbytné pro ochranu životního prostředí. Správným oddělováním plastu, papíru, skla a domácího odpadu pomáháme snižovat znečištění a šetřit přírodní zdroje. Každá malá akce se počítá — recyklace snižuje množství odpadu na skládkách a přetváří staré materiály v nové produkty."},
+      {"key":"score", "value":"Skóre:"},
+      {"key":"attempsLeft", "value":"Zbývající pokusy:"},
+      {"key":"mistakesLeft", "value":"Zbývající chyby:"}
+    ]
+  },
+  {
+    "code": "Fr-BE",
+    "entries": [
+      {"key":"playBtn", "value":"Jouer"},
+      {"key":"exitBtn", "value":"Quitter"},
+      {"key":"backBtn", "value":"Retour"},
+      {"key":"game1Btn", "value":"Jeu 1"},
+      {"key":"game2Btn", "value":"Jeu 2"},
+      {"key":"game3Btn", "value":"Jeu 3"},
+      {"key":"learnBtn", "value":"En savoir plus"},
+      {"key":"hint1Btn", "value":"Le but du jeu est de ramasser les déchets de la rivière. Flèches gauche/droite pour se déplacer et A, S, D, F, G pour choisir la catégorie (A - noir, S - bleu, D - brun, F - vert, G - jaune)."},
+      {"key":"hint2Btn", "value":"C’est comme un jeu de mémoire classique, mais au lieu des mêmes images, les cartes doivent être du même type (exemple : banane et pomme vont ensemble)."},
+      {"key":"hint3Btn", "value":"Semblable à Fruit Ninja, mais au lieu de couper les déchets, tu dois les trier par catégorie (exemple : la bouteille en verre va dans la zone verte)."},
+      {"key":"hintDefault", "value":""},
+      {"key":"learnText", "value":"Le tri sélectif des déchets est essentiel pour protéger l’environnement. En séparant correctement le plastique, le papier, le verre et les déchets ménagers, nous contribuons à réduire la pollution et à préserver les ressources naturelles. Chaque petit geste compte — le recyclage permet de diminuer les déchets envoyés en décharge et de créer de nouveaux produits à partir de matériaux anciens."},
+      {"key":"score", "value":"Score :"},
+      {"key":"attempsLeft", "value":"Essais restants :"},
+      {"key":"mistakesLeft", "value":"Erreurs restantes :"}
+    ]
+  },
+  {
+    "code": "Ro",
+    "entries": [
+      {"key":"playBtn", "value":"Joacă"},
+      {"key":"exitBtn", "value":"Ieșire"},
+      {"key":"backBtn", "value":"Înapoi"},
+      {"key":"game1Btn", "value":"Jocul 1"},
+      {"key":"game2Btn", "value":"Jocul 2"},
+      {"key":"game3Btn", "value":"Jocul 3"},
+      {"key":"learnBtn", "value":"Află mai multe"},
+      {"key":"hint1Btn", "value":"Scopul jocului este să colectezi gunoiul din râu. Folosește săgețile stânga/dreapta pentru mișcare și tastele A, S, D, F, G pentru selectarea categoriei (A - negru, S - albastru, D - maro, F - verde, G - galben)."},
+      {"key":"hint2Btn", "value":"Este ca un joc clasic de memorie, dar în loc ca perechile să aibă aceeași imagine, trebuie să fie de același tip (exemplu: banană cu măr este corect)."},
+      {"key":"hint3Btn", "value":"Similar cu Fruit Ninja, dar în loc să tai gunoiul, trebuie să-l sortezi pe categorii (exemplu: sticla merge în zona verde)."},
+      {"key":"hintDefault", "value":""},
+      {"key":"learnText", "value":"Colectarea selectivă a deșeurilor este esențială pentru protejarea mediului. Prin separarea corectă a plasticului, hârtiei, sticlei și deșeurilor menajere, contribuim la reducerea poluării și la economisirea resurselor naturale. Fiecare acțiune contează — reciclarea ajută la reducerea cantității de deșeuri trimise la groapa de gunoi și transformă materialele vechi în produse noi. Este responsabilitatea fiecăruia să păstrăm planeta curată pentru generațiile viitoare."},
+      {"key":"score", "value":"Scor:"},
+      {"key":"attempsLeft", "value":"Încercări rămase:"},
+      {"key":"mistakesLeft", "value":"Greșeli rămase:"}
     ]
   }
   ]

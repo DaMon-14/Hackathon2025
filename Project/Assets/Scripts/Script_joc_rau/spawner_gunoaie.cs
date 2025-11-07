@@ -25,12 +25,18 @@ public class spawner_gunoaie : MonoBehaviour
     public TMPro.TMP_Text score;
     public int score_int = 0;
     public int nr_vieti = 3;
+    private string text_score;
+    private string text_vieti;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         offset_h = GameObject.Find("sac").GetComponent<script_sac>().movementZone;
         pct_min = transform.position.x - offset_h;
         pct_max = transform.position.x + offset_h;
+        text_score = score.text;
+        score.text = text_score + score_int.ToString();
+        text_vieti = vieti.text;
+        vieti.text = text_vieti + nr_vieti.ToString();
     }
 
     // Update is called once per frame
@@ -74,7 +80,7 @@ public class spawner_gunoaie : MonoBehaviour
     public void adaugare()
     {
         score_int = score_int + 1;
-        score.text = "Score:" + score_int.ToString();
+        score.text = text_score + score_int.ToString();
         if(score_int>10)
         {
             gunoi.GetComponent<script_gunoi>().viteza = gunoi.GetComponent<script_gunoi>().viteza + 0.3f;
@@ -84,7 +90,7 @@ public class spawner_gunoaie : MonoBehaviour
     public void scadere()
     {
         nr_vieti = nr_vieti - 1;
-        vieti.text = "Încercări rămase:" + nr_vieti.ToString();
+        vieti.text = text_vieti + nr_vieti.ToString();
         if(nr_vieti<=0)
         {
             main_scene();

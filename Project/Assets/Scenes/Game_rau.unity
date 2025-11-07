@@ -313,6 +313,7 @@ GameObject:
   - component: {fileID: 265871091}
   - component: {fileID: 265871093}
   - component: {fileID: 265871092}
+  - component: {fileID: 265871094}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -438,6 +439,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 265871090}
   m_CullTransparentMesh: 1
+--- !u!114 &265871094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 265871090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c3e550d6facdd74cb19f606ecaf4c7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LocalizedText
+  key: exitBtn
 --- !u!1 &287111574
 GameObject:
   m_ObjectHideFlags: 0
@@ -449,6 +463,7 @@ GameObject:
   - component: {fileID: 287111575}
   - component: {fileID: 287111577}
   - component: {fileID: 287111576}
+  - component: {fileID: 287111578}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -574,6 +589,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 287111574}
   m_CullTransparentMesh: 1
+--- !u!114 &287111578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 287111574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c3e550d6facdd74cb19f606ecaf4c7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LocalizedText
+  key: attempsLeft
 --- !u!1 &915532232
 GameObject:
   m_ObjectHideFlags: 0
@@ -664,6 +692,7 @@ GameObject:
   - component: {fileID: 921409274}
   - component: {fileID: 921409276}
   - component: {fileID: 921409275}
+  - component: {fileID: 921409277}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -789,6 +818,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 921409273}
   m_CullTransparentMesh: 1
+--- !u!114 &921409277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 921409273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c3e550d6facdd74cb19f606ecaf4c7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LocalizedText
+  key: score
 --- !u!1 &997239071
 GameObject:
   m_ObjectHideFlags: 0
