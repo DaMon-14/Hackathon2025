@@ -8,7 +8,7 @@ public class Exit_Button : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public void OnButtonClick()
     {
-        SceneManager.LoadScene("mainGame");
+        SceneTransition.Instance.FadeToScene("CharacterCustomisation");
     }
     private void Start()
     {
@@ -19,7 +19,7 @@ public class Exit_Button : MonoBehaviour
     {
         if ((Card_Manager.score >= 10 && GameObject.Find("Card_Manager").GetComponent<Card_Manager>().allCardsCleared) || Card_Manager.attempts <= 0)
         {
-            SceneManager.LoadScene("mainGame");
+            SceneTransition.Instance.FadeToScene("CharacterCustomisation");
         }
     }
 }

@@ -10,7 +10,7 @@ public class backtotheBeginning : MonoBehaviour
     }
     public void backtothebeginning()
     {
-        SceneManager.LoadScene("mainGame");
+        SceneTransition.Instance.FadeToScene("mainGame");
     }
     // Update is called once per frame
     void Update()

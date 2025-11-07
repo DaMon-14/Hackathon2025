@@ -16,24 +16,24 @@ public class MenuManager : MonoBehaviour
 
     public void PlayGame()
     {
-        SceneManager.LoadScene("CharacterCustomisation");
+        SceneTransition.Instance.FadeToScene("CharacterCustomisation");
     }
     public void Loadlearnscene()
     {
-        SceneManager.LoadScene("learnScene");
+        SceneTransition.Instance.FadeToScene("learnScene");
     }
     public void Playgame1()
     {
-        SceneManager.LoadScene("Game_rau");
+        SceneTransition.Instance.FadeToScene("Game_rau");
 
     }
     public void Playgame2()
     {
-        SceneManager.LoadScene("Memory_Game");
+        SceneTransition.Instance.FadeToScene("Memory_Game");
     }
     public void Playgame3()
     {
-        SceneManager.LoadScene("Fruit_Ninja_Sort");
+        SceneTransition.Instance.FadeToScene("Fruit_Ninja_Sort");
     }
 
     public void QuitGame()
