@@ -368,6 +368,7 @@ MonoBehaviour:
   gunoi: {fileID: 511153555767050388, guid: 3ab1b85178a35ed4bb6334d7a3a082ed, type: 3}
   rate: 2
   offset_h: 10
+  sac: {fileID: 2102831355}
 --- !u!4 &1177453350
 Transform:
   m_ObjectHideFlags: 0
