@@ -13,8 +13,7 @@ public class End_Script : MonoBehaviour
 
     public void OnButtonClick()
     {
-        SceneTransition.Instance.FadeToScene("mainGame");
-        //SceneManager.LoadScene("mainGame");
+        SceneTransition.Instance.FadeToScene("CharacterCustomisation");
     }
 
     // Update is called once per frame
@@ -22,7 +21,7 @@ public class End_Script : MonoBehaviour
     {
         if(Item_Manager.mistakes_left <= 0)
         {
-            SceneManager.LoadScene("mainGame");
+            SceneTransition.Instance.FadeToScene("CharacterCustomisation");
         }
     }
 }

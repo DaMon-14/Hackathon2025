@@ -6,7 +6,7 @@ public class backscript : MonoBehaviour
     public GameObject text;
    public void backtomenu()
     {
-        SceneManager.LoadScene("CharacterCustomisation");
+        SceneTransition.Instance.FadeToScene("CharacterCustomisation");
     }
 
 
