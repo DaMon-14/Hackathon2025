@@ -8,17 +8,13 @@ using UnityEngine.Playables;
 public class test : MonoBehaviour
 {
     public float moveDistance = 0.1f;
-
-    void Start()
-    {
-
-    }
+    public float movementZone = 6f;
 
     void Update()
     {
-        
-        // Detect Space key press (once per press)
-        if ( Keyboard.current.dKey.isPressed)
+        transform.rotation = new Quaternion(0, 0, 0, 0);
+        transform.position = new Vector3(transform.position.x, -2.88f, 0);
+        if ( Keyboard.current.dKey.isPressed || Keyboard.current.rightArrowKey.isPressed)
         {
              transform.position = new Vector3(
                 transform.position.x + moveDistance,
@@ -26,7 +22,7 @@ public class test : MonoBehaviour
                 transform.position.z
             );
         }
-        if (Keyboard.current.aKey.isPressed)
+        if (Keyboard.current.aKey.isPressed || Keyboard.current.leftArrowKey.isPressed)
         {
             transform.position = new Vector3(
                 transform.position.x - moveDistance,
@@ -35,22 +31,21 @@ public class test : MonoBehaviour
             );
         }
 
-        if (transform.position.x < -6)
+        if (transform.position.x < -movementZone)
         {
-            transform.position = new Vector3(-6,transform.position.y,transform.position.z);
+            transform.position = new Vector3(-movementZone,transform.position.y,transform.position.z);
         }
         else
         {
             transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z);
         }
-        if (transform.position.x>6)
+        if (transform.position.x>movementZone)
         {   
-            transform.position = new Vector3(6, transform.position.y, transform.position.z);
+            transform.position = new Vector3(movementZone, transform.position.y, transform.position.z);
         }
         else
         {
             transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z);
-
         }
 
     }

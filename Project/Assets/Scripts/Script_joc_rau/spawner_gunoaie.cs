@@ -15,33 +15,29 @@ public class spawner_gunoaie : MonoBehaviour
     public float rate = 2;
     private float contor = 0;
     public float offset_h = 10;
-    
+    private float pct_min;
+    private float pct_max;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+        pct_min = transform.position.x - offset_h;
+        pct_max = transform.position.x + offset_h;
     }
 
     // Update is called once per frame
     void Update()
     {
-        float pct_min = transform.position.x - offset_h;
-        float pct_max = transform.position.x + offset_h;
-
-
         if (contor <= rate)
         {
-
-
             contor = contor + Time.deltaTime;
         }
         else
         {
-            Sprite[] blueSprites = Resources.LoadAll<Sprite>("Card/0");
-            Sprite[] greenSprites = Resources.LoadAll<Sprite>("Card/1");
-            Sprite[] yellowSprites = Resources.LoadAll<Sprite>("Card/2");
-            Sprite[] brownSprites = Resources.LoadAll<Sprite>("Card/3");
-            Sprite[] blackSprites = Resources.LoadAll<Sprite>("Card/4");
+            Sprite[] blueSprites = Resources.LoadAll<Sprite>("joc_rau/0");
+            Sprite[] greenSprites = Resources.LoadAll<Sprite>("joc_rau/1");
+            Sprite[] yellowSprites = Resources.LoadAll<Sprite>("joc_rau/2");
+            Sprite[] brownSprites = Resources.LoadAll<Sprite>("joc_rau/3");
+            Sprite[] blackSprites = Resources.LoadAll<Sprite>("joc_rau/4");
 
             spriteIndex = UnityEngine.Random.Range(0, 5);
             SpriteRenderer gunoirenderer = gunoi.GetComponent<SpriteRenderer>();
@@ -59,13 +55,6 @@ public class spawner_gunoaie : MonoBehaviour
 
             Instantiate(gunoi, new Vector3(UnityEngine.Random.Range(pct_min, pct_max), transform.position.y, 0), transform.rotation);
             contor = 0;
-
-            
-               
         }
     }
-
-
-
-
 }

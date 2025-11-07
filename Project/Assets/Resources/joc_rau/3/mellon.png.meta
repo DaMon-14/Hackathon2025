@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 2445a9ac5ff79894999a712ed545d80f
+guid: cb404af7d0d6c44418b1c3f9e20b1f9f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3484242174774764305
-    second: yellow_card_0
+      213: 6490017761042026299
+    second: mellon_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: yellow_card_0
+      name: mellon_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 256
-        height: 384
+        x: 11
+        y: 128
+        width: 244
+        height: 124
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fec9d1dc33c75afc0800000000000000
-      internalID: -3484242174774764305
+      spriteID: b3fc2e0a4cc211a50800000000000000
+      internalID: 6490017761042026299
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      yellow_card_0: -3484242174774764305
+      mellon_0: 6490017761042026299
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
