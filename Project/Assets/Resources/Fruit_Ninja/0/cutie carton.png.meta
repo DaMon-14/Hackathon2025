@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 4644efb5c3f581e4381f17c23fdb3886
+guid: 102e9b7299687e849a1a00aab6a7437f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3076940198372563730
-    second: brown_banana_!_0
+      213: 2364512271724516227
+    second: cutie carton_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 1280
+  spritePixelsToUnits: 256
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: brown_banana_!_0
+      name: cutie carton_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 384
-        width: 1272
-        height: 1002
+        x: 0
+        y: 0
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 21bdd1fdecc73ba20800000000000000
-      internalID: 3076940198372563730
+      spriteID: 3831137226f60d020800000000000000
+      internalID: 2364512271724516227
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      brown_banana_!_0: 3076940198372563730
+      cutie carton_0: 2364512271724516227
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

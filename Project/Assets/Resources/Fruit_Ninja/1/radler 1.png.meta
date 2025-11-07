@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 9cd9f9190c30206449a4bed178e030c6
+guid: 031aca7d509b1b845a9f4d9609adf9b7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1000539725814200390
-    second: circle_brown_0
+      213: -8122021010313844526
+    second: radler 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,7 +126,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: circle_brown_0
+      name: radler 1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ab78d23ab6e5d12f0800000000000000
-      internalID: -1000539725814200390
+      spriteID: 2d8ebf56ce8c84f80800000000000000
+      internalID: -8122021010313844526
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      circle_brown_0: -1000539725814200390
+      radler 1_0: -8122021010313844526
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

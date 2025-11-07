@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: ded1c1d0658006246b4fcbae297cde9d
+guid: 38ffa65967a6ed34988ba454290448c5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 898884775482847503
-    second: circle_yellow_0
+      213: 2678262130326568975
+    second: gunoi maro_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,7 +126,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: circle_yellow_0
+      name: gunoi maro_0
       rect:
         serializedVersion: 2
         x: 0
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f0179a8d0fa797c00800000000000000
-      internalID: 898884775482847503
+      spriteID: f000f7da7391b2520800000000000000
+      internalID: 2678262130326568975
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      circle_yellow_0: 898884775482847503
+      gunoi maro_0: 2678262130326568975
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

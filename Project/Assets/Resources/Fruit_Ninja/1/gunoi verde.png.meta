@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: bca3212c81e50cf479fbd2745018afe3
+guid: 4cb2ad91d0ea529469902eda1c5719b8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8809529324548885955
-    second: blue_paper_0
+      213: 1575050887262271662
+    second: gunoi verde_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: blue_paper_0
+      name: gunoi verde_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 256
-        height: 384
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3cd8f1cee3cb14a70800000000000000
-      internalID: 8809529324548885955
+      spriteID: ea87e6edf64bbd510800000000000000
+      internalID: 1575050887262271662
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      blue_paper_0: 8809529324548885955
+      gunoi verde_0: 1575050887262271662
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

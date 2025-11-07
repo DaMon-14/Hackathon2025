@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 22b2af5af22a65641ae7ed23134d0c92
+guid: c469786669ce891468d57f243272a713
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5255796163456597
-    second: circle_blue_0
+      213: 6311011084147556047
+    second: punga plastic_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,7 +126,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: circle_blue_0
+      name: punga plastic_0
       rect:
         serializedVersion: 2
         x: 0
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ba15aa891e35deff0800000000000000
-      internalID: -5255796163456597
+      spriteID: fcefa24d427359750800000000000000
+      internalID: 6311011084147556047
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      circle_blue_0: -5255796163456597
+      punga plastic_0: 6311011084147556047
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

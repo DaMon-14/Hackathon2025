@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 0bf474f7d76a26f4a8e603d1abfbac97
+guid: 9d2cecc25ad79da43bc6e709650b7686
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7411545433185839210
-    second: circle_black_0
+      213: -6713672143403237544
+    second: gunoi_galben_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,7 +126,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: circle_black_0
+      name: gunoi_galben_0
       rect:
         serializedVersion: 2
         x: 0
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a68e5bdad491bd660800000000000000
-      internalID: 7411545433185839210
+      spriteID: 85fb30291ce34d2a0800000000000000
+      internalID: -6713672143403237544
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      circle_black_0: 7411545433185839210
+      gunoi_galben_0: -6713672143403237544
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
