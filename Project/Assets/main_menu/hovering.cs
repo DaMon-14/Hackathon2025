@@ -29,7 +29,7 @@ public class ButtonPreview : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
         if (fadeRoutine != null) StopCoroutine(fadeRoutine);
         fadeRoutine = StartCoroutine(FadeOutVideo());
     }
-
+    
     public void OnPointerClick(PointerEventData eventData)
     {
         SceneManager.LoadScene(sceneToLoad);
