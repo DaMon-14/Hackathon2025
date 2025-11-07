@@ -10,6 +10,7 @@ TagManager:
   - 3
   - 4
   - Fail_Area
+  - logica
   layers:
   - Default
   - TransparentFX

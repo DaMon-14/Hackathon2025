@@ -15,10 +15,7 @@ public class spawner_gunoaie : MonoBehaviour
     public float rate = 2;
     private float contor = 0;
     public float offset_h = 10;
-    public GameObject sac=new GameObject();
-    int viu = 1;
-    int score = 0;
-
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -62,20 +59,13 @@ public class spawner_gunoaie : MonoBehaviour
 
             Instantiate(gunoi, new Vector3(UnityEngine.Random.Range(pct_min, pct_max), transform.position.y, 0), transform.rotation);
             contor = 0;
+
+            
+               
         }
     }
 
-    public void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (gunoi.transform.position.y == sac.transform.position.y && gunoi.transform.position.x == sac.transform.position.x)
-        {
-            viu = 0;
-            Destroy(gameObject);
-            score++;
 
-
-        }
-    }
 
 
 }

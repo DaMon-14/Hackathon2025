@@ -8,8 +8,12 @@ using UnityEngine.Playables;
 public class test : MonoBehaviour
 {
     public float moveDistance = 0.1f;
-    public GameObject square = new GameObject();
-    
+
+    void Start()
+    {
+
+    }
+
     void Update()
     {
         
@@ -24,30 +28,35 @@ public class test : MonoBehaviour
         }
         if (Keyboard.current.aKey.isPressed)
         {
-            square.transform.position = new Vector3(
+            transform.position = new Vector3(
                 transform.position.x - moveDistance,
                 transform.position.y,
                 transform.position.z
             );
         }
 
-        if (square.transform.position.x < -6)
+        if (transform.position.x < -6)
         {
-            square.transform.position = new Vector3(-6,transform.position.y,transform.position.z);
+            transform.position = new Vector3(-6,transform.position.y,transform.position.z);
         }
         else
         {
-            square.transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z);
+            transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z);
         }
-        if (square.transform.position.x>6)
-        {
-            square.transform.position = new Vector3(6, transform.position.y, transform.position.z);
+        if (transform.position.x>6)
+        {   
+            transform.position = new Vector3(6, transform.position.y, transform.position.z);
         }
         else
         {
-            square.transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z);
+            transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z);
 
         }
 
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Debug.Log("hit" + collision.gameObject.name);
     }
 }
