@@ -17,7 +17,7 @@ public class Exit_Button : MonoBehaviour
 
     void Update()
     {
-        if(Card_Manager.score >=10 || Card_Manager.attempts <= 0)
+        if ((Card_Manager.score >= 10 && GameObject.Find("Card_Manager").GetComponent<Card_Manager>().allCardsCleared) || Card_Manager.attempts <= 0)
         {
             SceneManager.LoadScene("mainGame");
         }

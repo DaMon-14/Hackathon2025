@@ -845,7 +845,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Card
   rotationSpeed: 400
-  moveSpeed: 5
+  moveSpeed: 10
   flipToBack: 0
   moveToDelete: 0
   type: -1
@@ -989,7 +989,7 @@ MonoBehaviour:
   attempts: 15
   startTime: 0
   currentTime: 0
-  waitTime: 2
+  waitTime: 0.75
   selectedCardsIsFull: 0
 --- !u!1 &1797540427
 GameObject:

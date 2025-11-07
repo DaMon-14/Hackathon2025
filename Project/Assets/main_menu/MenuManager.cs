@@ -18,6 +18,10 @@ public class MenuManager : MonoBehaviour
     {
         SceneManager.LoadScene("CharacterCustomisation");
     }
+    public void Loadlearnscene()
+    {
+        SceneManager.LoadScene("learnScene");
+    }
     public void Playgame1()
     {
         SceneManager.LoadScene("Game_rau");
