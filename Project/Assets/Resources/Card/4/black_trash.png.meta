@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 30fbe208f5c644045b091fd0efb24aee
+guid: 637accd171e2d54429fe10e044d6017c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -162970955971359847
-    second: brown_card_0
+      213: -365045664131243959
+    second: black_trash_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -122,30 +122,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WindowsStoreApps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: brown_card_0
+      name: black_trash_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 256
-        height: 384
+        x: 5
+        y: 63
+        width: 244
+        height: 244
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 99b0f9c67c20dbdf0800000000000000
-      internalID: -162970955971359847
+      spriteID: 94029ae07e81feaf0800000000000000
+      internalID: -365045664131243959
       vertices: []
       indices: 
       edges: []
@@ -174,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      brown_card_0: -162970955971359847
+      black_trash_0: -365045664131243959
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

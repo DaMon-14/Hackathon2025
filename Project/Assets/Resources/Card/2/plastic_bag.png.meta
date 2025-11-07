@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 342b9c700d581504088bac9d9ae36d8b
+guid: d4119f4cee9989f4b99512ea7e74abf0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4776384820066670913
-    second: blue_box_0
+      213: -5986240587178107622
+    second: plastic_bag_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: blue_box_0
+      name: plastic_bag_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 256
-        height: 384
+        x: 15
+        y: 47
+        width: 222
+        height: 262
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fb6ab51005fd6bdb0800000000000000
-      internalID: -4776384820066670913
+      spriteID: a1d193507e99ceca0800000000000000
+      internalID: -5986240587178107622
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      blue_box_0: -4776384820066670913
+      plastic_bag_0: -5986240587178107622
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

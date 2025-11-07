@@ -42,7 +42,7 @@ public class Card_Manager : MonoBehaviour
             for (int j = 0; j < rows; j++)
             {
                 string cardName = "card_" + i.ToString() + "_" + j.ToString();
-                cards[i, j] = Instantiate(cardModel, new Vector3(i * 3.0f - 6, j * 2.0f - 3, -0.1f), Quaternion.identity);
+                cards[i, j] = Instantiate(cardModel, new Vector3(i * 3.0f - 6, j * 2.0f - 3.5f, -0.1f), Quaternion.identity);
                 cards[i, j].name = cardName;
                 
                 child = cards[i, j].transform.Find("Front");
