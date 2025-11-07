@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -10,16 +11,20 @@ using UnityEngine.UI;
 
 public class spawner_gunoaie : MonoBehaviour
 {
+    public GameObject sac;
     public GameObject gunoi;
     int spriteIndex;
     public float rate = 2;
     private float contor = 0;
-    public float offset_h = 10;
+    public float offset_h;
     private float pct_min;
     private float pct_max;
+    public int ct = 0;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        offset_h = GameObject.Find("sac").GetComponent<script_sac>().movementZone;
         pct_min = transform.position.x - offset_h;
         pct_max = transform.position.x + offset_h;
     }
@@ -41,6 +46,8 @@ public class spawner_gunoaie : MonoBehaviour
 
             spriteIndex = UnityEngine.Random.Range(0, 5);
             SpriteRenderer gunoirenderer = gunoi.GetComponent<SpriteRenderer>();
+            gunoi.GetComponent<script_gunoi>().type = spriteIndex;
+
 
             if (spriteIndex == 0)
                 gunoirenderer.sprite = blueSprites[UnityEngine.Random.Range(0, blueSprites.Length)];
@@ -55,6 +62,12 @@ public class spawner_gunoaie : MonoBehaviour
 
             Instantiate(gunoi, new Vector3(UnityEngine.Random.Range(pct_min, pct_max), transform.position.y, 0), transform.rotation);
             contor = 0;
+
+           
+
+            
+             
+
         }
     }
 }

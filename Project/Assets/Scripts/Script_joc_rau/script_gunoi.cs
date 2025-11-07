@@ -6,7 +6,7 @@ public class script_gunoi : MonoBehaviour
    
     public float viteza = 5;
     public float deadzone = -8;
-  
+    public int type;
 
     // Update is called once per frame
     void Update()
@@ -25,6 +25,11 @@ public class script_gunoi : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        if(type==collision.gameObject.GetComponent<script_sac>().type)
+        {
+            Debug.Log("score ++");
+        }
+
         Debug.Log("hitgunoi" + collision.gameObject.name);
         Destroy(gameObject);
     }
