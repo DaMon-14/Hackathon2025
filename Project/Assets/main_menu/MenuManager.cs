@@ -20,7 +20,7 @@ public class MenuManager : MonoBehaviour
     }
     public void Playgame1()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("Game_rau");
 
     }
     public void Playgame2()
