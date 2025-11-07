@@ -84,11 +84,7 @@ public class script_sac : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        Debug.Log("hit" + collision.gameObject.name);
-
-    }
+   
 
     
    
