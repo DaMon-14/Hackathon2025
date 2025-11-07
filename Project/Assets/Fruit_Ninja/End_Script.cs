@@ -13,7 +13,8 @@ public class End_Script : MonoBehaviour
 
     public void OnButtonClick()
     {
-        SceneManager.LoadScene("mainGame");
+        SceneTransition.Instance.FadeToScene("mainGame");
+        //SceneManager.LoadScene("mainGame");
     }
 
     // Update is called once per frame
