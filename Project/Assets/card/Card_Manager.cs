@@ -25,12 +25,18 @@ public class Card_Manager : MonoBehaviour
 
     public bool selectedCardsIsFull = false;
     public bool allCardsCleared = false;
+
+    private string textScore;
+    private string textRemainingAttempts;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        textScore = scoreText.text;
+        textRemainingAttempts = remainingAttemptsText.text;
+
         cardModel = new GameObject();
-        scoreText.text = "Score: 0";
-        remainingAttemptsText.text = "Attempts Left: " + attempts.ToString();
+        scoreText.text = textScore + score.ToString();
+        remainingAttemptsText.text = textRemainingAttempts + attempts.ToString();
         Sprite[] blueSprites = Resources.LoadAll<Sprite>("Card/0");
         Sprite[] greenSprites = Resources.LoadAll<Sprite>("Card/1");
         Sprite[] yellowSprites = Resources.LoadAll<Sprite>("Card/2");
@@ -110,7 +116,7 @@ public class Card_Manager : MonoBehaviour
                         GameObject.Find(selectedCards[0].name).GetComponent<Card>().moveToDelete = true;
                         GameObject.Find(selectedCards[1].name).GetComponent<Card>().moveToDelete = true;
                         score++;
-                        scoreText.text = "Score: " + score.ToString();
+                        scoreText.text = textScore + score.ToString();
                     }
                     else
                     {
@@ -118,7 +124,7 @@ public class Card_Manager : MonoBehaviour
                         GameObject.Find(selectedCards[0].name).GetComponent<Card>().flipToBack = true;
                         GameObject.Find(selectedCards[1].name).GetComponent<Card>().flipToBack = true;
                         attempts -= 1;
-                        remainingAttemptsText.text = "Attempts Left: " + attempts.ToString();
+                        remainingAttemptsText.text = textRemainingAttempts + attempts.ToString();
                     }
                     selectedCards = new GameObject[2] { null, null };
 

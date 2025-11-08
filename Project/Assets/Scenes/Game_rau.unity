@@ -313,6 +313,7 @@ GameObject:
   - component: {fileID: 265871091}
   - component: {fileID: 265871093}
   - component: {fileID: 265871092}
+  - component: {fileID: 265871094}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -438,6 +439,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 265871090}
   m_CullTransparentMesh: 1
+--- !u!114 &265871094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 265871090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c3e550d6facdd74cb19f606ecaf4c7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LocalizedText
+  key: exitBtn
 --- !u!1 &287111574
 GameObject:
   m_ObjectHideFlags: 0
@@ -449,6 +463,7 @@ GameObject:
   - component: {fileID: 287111575}
   - component: {fileID: 287111577}
   - component: {fileID: 287111576}
+  - component: {fileID: 287111578}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -574,6 +589,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 287111574}
   m_CullTransparentMesh: 1
+--- !u!114 &287111578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 287111574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c3e550d6facdd74cb19f606ecaf4c7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LocalizedText
+  key: attempsLeft
 --- !u!1 &915532232
 GameObject:
   m_ObjectHideFlags: 0
@@ -664,6 +692,7 @@ GameObject:
   - component: {fileID: 921409274}
   - component: {fileID: 921409276}
   - component: {fileID: 921409275}
+  - component: {fileID: 921409277}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -789,6 +818,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 921409273}
   m_CullTransparentMesh: 1
+--- !u!114 &921409277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 921409273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c3e550d6facdd74cb19f606ecaf4c7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LocalizedText
+  key: score
 --- !u!1 &997239071
 GameObject:
   m_ObjectHideFlags: 0
@@ -1219,12 +1261,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.CanvasScaler
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -1339,7 +1381,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -7423708226498581497, guid: 8e763aa0f248f3b4bbdbc9af53f4f7cd, type: 3}
+  m_Sprite: {fileID: -6473379884045465844, guid: 2a966a0ac1a16964f809c3fc0d340c87, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1360,7 +1402,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 2}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.7185513, y: 0.6292136, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1551,7 +1593,6 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 997239074}
-  - {fileID: 581744778}
   - {fileID: 1177453350}
   - {fileID: 915532235}
   - {fileID: 1878632227}

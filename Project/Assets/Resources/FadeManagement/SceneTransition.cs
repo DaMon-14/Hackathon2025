@@ -31,8 +31,17 @@ public class SceneTransition : MonoBehaviour
 
     void Start()
     {
-        if (fadeCanvasGroup != null)
-            StartCoroutine(Fade(0f)); // Fade in when the game starts
+        if(SceneManager.GetActiveScene().name == "mainGame")
+        {
+            fadeCanvasGroup.alpha = 0f; // Start black
+            StartCoroutine(Fade(0f));
+        }
+        else
+        {
+            if (fadeCanvasGroup != null)
+                StartCoroutine(Fade(0f)); // Fade in when the game starts
+        }
+        
     }
 
     public void FadeToScene(string sceneName)
