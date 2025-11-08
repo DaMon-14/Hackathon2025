@@ -16,6 +16,7 @@ public class Card_Manager : MonoBehaviour
     public TMPro.TMP_Text scoreText;
     public TMPro.TMP_Text remainingAttemptsText;
     public int attempts = 15;
+    public GameObject audio;
 
     public float startTime;
     public float currentTime;
@@ -117,6 +118,7 @@ public class Card_Manager : MonoBehaviour
                         GameObject.Find(selectedCards[1].name).GetComponent<Card>().moveToDelete = true;
                         score++;
                         scoreText.text = textScore + score.ToString();
+                        audio.GetComponent<script_manageraudio_memory>().fcorect();
                     }
                     else
                     {
@@ -125,6 +127,7 @@ public class Card_Manager : MonoBehaviour
                         GameObject.Find(selectedCards[1].name).GetComponent<Card>().flipToBack = true;
                         attempts -= 1;
                         remainingAttemptsText.text = textRemainingAttempts + attempts.ToString();
+                        audio.GetComponent<script_manageraudio_memory>().fgresit();
                     }
                     selectedCards = new GameObject[2] { null, null };
 

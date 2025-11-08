@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class script_manageraudio_rau : MonoBehaviour
+public class script_manageraudio_memory : MonoBehaviour
 {
     [Header("-------Sursa audio------")]
     [SerializeField] AudioSource sursa_muzica;
@@ -35,5 +35,6 @@ public class script_manageraudio_rau : MonoBehaviour
         sursa_fx.clip = corect;
         sursa_fx.Play();
     }
+
 
 }

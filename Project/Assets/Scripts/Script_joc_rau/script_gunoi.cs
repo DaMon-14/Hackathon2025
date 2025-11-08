@@ -21,7 +21,7 @@ public class script_gunoi : MonoBehaviour
         
         if (transform.position.y < deadzone)
         {
-            audio.GetComponent<script_manageraudio>().fgresit();
+            audio.GetComponent<script_manageraudio_rau>().fgresit();
             spawn.GetComponent<spawner_gunoaie>().scadere();
             Destroy(gameObject);
             
@@ -35,7 +35,7 @@ public class script_gunoi : MonoBehaviour
     {
         if(type==collision.gameObject.GetComponent<script_sac>().type)
         {
-            audio.GetComponent<script_manageraudio>().fcorect();
+            audio.GetComponent<script_manageraudio_rau>().fcorect();
             Destroy(gameObject);
             spawn.GetComponent<spawner_gunoaie>().adaugare();
             
@@ -43,7 +43,7 @@ public class script_gunoi : MonoBehaviour
         }
         else
         {
-            audio.GetComponent<script_manageraudio>().fgresit();
+            audio.GetComponent<script_manageraudio_rau>().fgresit();
             Destroy(gameObject);
             spawn.GetComponent<spawner_gunoaie>().scadere();
            
