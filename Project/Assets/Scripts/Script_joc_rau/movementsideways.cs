@@ -19,7 +19,7 @@ public class script_sac : MonoBehaviour
     void Update()
     {
         transform.rotation = new Quaternion(0, 0, 0, 0);
-        transform.position = new Vector3(transform.position.x, -2.88f, 0);
+        transform.position = new Vector3(transform.position.x, -3.24f, 0);
         if (Keyboard.current.rightArrowKey.isPressed)
         {
              transform.position = new Vector3(

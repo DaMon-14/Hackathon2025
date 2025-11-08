@@ -6,7 +6,7 @@ public class script_gunoi : MonoBehaviour
 {
     public GameObject spawn;
     public float viteza = 2f;
-    public float deadzone = -4.5f;
+    public float deadzone = -3f;
     public int type;
     public int score_int = 0;
     // Update is called once per frame
