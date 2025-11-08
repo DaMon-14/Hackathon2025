@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 41cb5580094722d488c02d848315c9b2
+guid: fc41c3b30e023ba44bf819d06f294e27
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3768731838553679815
-    second: black_card_0
+      213: 5687602381779542212
+    second: cigarretebutt_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: black_card_0
+      name: cigarretebutt_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 256
-        height: 384
+        x: 64
+        y: 119
+        width: 141
+        height: 142
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9389d454c56c2bbc0800000000000000
-      internalID: -3768731838553679815
+      spriteID: 4c0a2a56b3c6eee40800000000000000
+      internalID: 5687602381779542212
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      black_card_0: -3768731838553679815
+      cigarretebutt_0: 5687602381779542212
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

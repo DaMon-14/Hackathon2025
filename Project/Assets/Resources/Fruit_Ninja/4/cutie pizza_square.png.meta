@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 4e28e95bf4ef69945a019356dcb7e6bb
+guid: 9d65e35f6cd3d714bb0a79c908bc45fc
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3768731838553679815
-    second: black_card_0
+      213: 2508618078401462061
+    second: cutie pizza_square_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 256
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: black_card_0
+      name: cutie pizza_square_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 256
-        height: 384
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9389d454c56c2bbc0800000000000000
-      internalID: -3768731838553679815
+      spriteID: d2ffd30e9d660d220800000000000000
+      internalID: 2508618078401462061
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      black_card_0: -3768731838553679815
+      cutie pizza_square_0: 2508618078401462061
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
