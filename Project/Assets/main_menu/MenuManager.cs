@@ -10,7 +10,8 @@ public class MenuManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        GameObject.Find("PLAYButton").transform.Find("Text (TMP)").GetComponent<LocalizedText>().UpdateText();
+        GameObject.Find("Button").transform.Find("Text (TMP)").GetComponent<LocalizedText>().UpdateText();
     }
 
 
@@ -46,6 +47,7 @@ public class MenuManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         if (Keyboard.current.escapeKey.isPressed)
         {
             QuitGame();
