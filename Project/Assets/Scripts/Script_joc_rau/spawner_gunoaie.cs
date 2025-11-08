@@ -27,6 +27,7 @@ public class spawner_gunoaie : MonoBehaviour
     public int nr_vieti = 3;
     private string text_score;
     private string text_vieti;
+    public GameObject audio;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -81,20 +82,23 @@ public class spawner_gunoaie : MonoBehaviour
     {
         score_int = score_int + 1;
         score.text = text_score + score_int.ToString();
-        if(score_int>10)
+       
+        if (score_int>10)
         {
             gunoi.GetComponent<script_gunoi>().viteza = gunoi.GetComponent<script_gunoi>().viteza + 0.3f;
         }
+      
     }
 
     public void scadere()
     {
         nr_vieti = nr_vieti - 1;
         vieti.text = text_vieti + nr_vieti.ToString();
-        if(nr_vieti<=0)
+        if (nr_vieti<=0)
         {
             main_scene();
         }
+        
     }
 
     public void main_scene()

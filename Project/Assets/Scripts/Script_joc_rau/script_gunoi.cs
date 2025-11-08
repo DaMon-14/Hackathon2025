@@ -10,7 +10,7 @@ public class script_gunoi : MonoBehaviour
     public int type;
     public int score_int = 0;
     // Update is called once per frame
-
+    public GameObject audio;
 
     void Update()
     {
@@ -21,8 +21,10 @@ public class script_gunoi : MonoBehaviour
         
         if (transform.position.y < deadzone)
         {
+            audio.GetComponent<script_manageraudio_rau>().fgresit();
             spawn.GetComponent<spawner_gunoaie>().scadere();
             Destroy(gameObject);
+            
         }
 
        
@@ -33,14 +35,18 @@ public class script_gunoi : MonoBehaviour
     {
         if(type==collision.gameObject.GetComponent<script_sac>().type)
         {
-            spawn.GetComponent<spawner_gunoaie>().adaugare();
+            audio.GetComponent<script_manageraudio_rau>().fcorect();
             Destroy(gameObject);
+            spawn.GetComponent<spawner_gunoaie>().adaugare();
+            
+           
         }
         else
         {
+            audio.GetComponent<script_manageraudio_rau>().fgresit();
             Destroy(gameObject);
             spawn.GetComponent<spawner_gunoaie>().scadere();
-            
+           
         }   
 
           

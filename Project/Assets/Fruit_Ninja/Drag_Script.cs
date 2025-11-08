@@ -12,6 +12,7 @@ public class Drag_script : MonoBehaviour
     private bool forceApplied = false;
     private Rigidbody2D rb;
     public float impulseStrength = 5f;
+    public GameObject audio;
 
     Vector2 mousePos;
     RaycastHit2D hit;
@@ -78,14 +79,20 @@ public class Drag_script : MonoBehaviour
         Debug.Log($"{gameObject.name} collided with {collision.gameObject.name}");
         if(type.ToString() == collision.gameObject.tag)
         {
+           
             GameObject.Find("Item_Manager").GetComponent<Item_Manager>().score += 1;
-        }else if(collision.gameObject.tag == gameObject.tag)  
+            audio.GetComponent<script_manageraudio_ninja>().fcorect();
+
+        }
+        else if(collision.gameObject.tag == gameObject.tag)  
         {
             // Do nothing
         }
         else
         {
+            
             GameObject.Find("Item_Manager").GetComponent<Item_Manager>().mistakes_left -= 1;
+            audio.GetComponent<script_manageraudio_ninja>().fgresit();
         }
         if (!(collision.gameObject.tag == gameObject.tag) || collision.gameObject.tag == "Fail_Area")
         {
